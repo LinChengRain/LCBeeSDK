@@ -18,6 +18,15 @@
 		7B326DB11FF2718900A4A7FD /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DAC1FF2718800A4A7FD /* SettingViewController.m */; };
 		7B326DB21FF2718900A4A7FD /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DAD1FF2718900A4A7FD /* MainTabBarViewController.m */; };
 		7B326DB31FF2718900A4A7FD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DAE1FF2718900A4A7FD /* BaseViewController.m */; };
+		7B326DB61FF2729B00A4A7FD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DB51FF2729B00A4A7FD /* UIView+Extension.m */; };
+		7B326DB91FF273A000A4A7FD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DB81FF273A000A4A7FD /* NSString+Extension.m */; };
+		7B326DBF1FF274D800A4A7FD /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DBE1FF274D800A4A7FD /* UIColor+Extension.m */; };
+		7B326DC21FF2765E00A4A7FD /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DC11FF2765E00A4A7FD /* UIButton+Extension.m */; };
+		7B326DC51FF2780000A4A7FD /* LCWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DC41FF2780000A4A7FD /* LCWebview.m */; };
+		7B326DC81FF2780F00A4A7FD /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DC71FF2780F00A4A7FD /* LCButton.m */; };
+		7B326DCB1FF2784200A4A7FD /* LCRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DC91FF2784100A4A7FD /* LCRegularTool.m */; };
+		7B326DD21FF27D3C00A4A7FD /* CustomBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DD01FF27D3B00A4A7FD /* CustomBadgeViewController.m */; };
+		7B326DD51FF27D5400A4A7FD /* CustomBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +51,24 @@
 		7B326DAC1FF2718800A4A7FD /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		7B326DAD1FF2718900A4A7FD /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		7B326DAE1FF2718900A4A7FD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7B326DB41FF2729B00A4A7FD /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7B326DB51FF2729B00A4A7FD /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7B326DB71FF273A000A4A7FD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		7B326DB81FF273A000A4A7FD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		7B326DBD1FF274D800A4A7FD /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		7B326DBE1FF274D800A4A7FD /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		7B326DC01FF2765E00A4A7FD /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		7B326DC11FF2765E00A4A7FD /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		7B326DC31FF2780000A4A7FD /* LCWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWebview.h; sourceTree = "<group>"; };
+		7B326DC41FF2780000A4A7FD /* LCWebview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWebview.m; sourceTree = "<group>"; };
+		7B326DC61FF2780F00A4A7FD /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
+		7B326DC71FF2780F00A4A7FD /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
+		7B326DC91FF2784100A4A7FD /* LCRegularTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRegularTool.m; sourceTree = "<group>"; };
+		7B326DCA1FF2784100A4A7FD /* LCRegularTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRegularTool.h; sourceTree = "<group>"; };
+		7B326DD01FF27D3B00A4A7FD /* CustomBadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeViewController.m; sourceTree = "<group>"; };
+		7B326DD11FF27D3B00A4A7FD /* CustomBadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadgeViewController.h; sourceTree = "<group>"; };
+		7B326DD31FF27D5400A4A7FD /* CustomBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBadgeView.h; sourceTree = "<group>"; };
+		7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +122,8 @@
 		7B326D7D1FF265ED00A4A7FD /* ToolPackage */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DCA1FF2784100A4A7FD /* LCRegularTool.h */,
+				7B326DC91FF2784100A4A7FD /* LCRegularTool.m */,
 				7B326D911FF26D1100A4A7FD /* Macro */,
 			);
 			path = ToolPackage;
@@ -110,6 +139,14 @@
 		7B326D7F1FF265ED00A4A7FD /* CategoryPackage */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DB41FF2729B00A4A7FD /* UIView+Extension.h */,
+				7B326DB51FF2729B00A4A7FD /* UIView+Extension.m */,
+				7B326DB71FF273A000A4A7FD /* NSString+Extension.h */,
+				7B326DB81FF273A000A4A7FD /* NSString+Extension.m */,
+				7B326DBD1FF274D800A4A7FD /* UIColor+Extension.h */,
+				7B326DBE1FF274D800A4A7FD /* UIColor+Extension.m */,
+				7B326DC01FF2765E00A4A7FD /* UIButton+Extension.h */,
+				7B326DC11FF2765E00A4A7FD /* UIButton+Extension.m */,
 			);
 			path = CategoryPackage;
 			sourceTree = "<group>";
@@ -117,6 +154,10 @@
 		7B326D801FF265ED00A4A7FD /* UIPackage */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DC61FF2780F00A4A7FD /* LCButton.h */,
+				7B326DC71FF2780F00A4A7FD /* LCButton.m */,
+				7B326DC31FF2780000A4A7FD /* LCWebview.h */,
+				7B326DC41FF2780000A4A7FD /* LCWebview.m */,
 			);
 			path = UIPackage;
 			sourceTree = "<group>";
@@ -124,6 +165,7 @@
 		7B326D811FF2662100A4A7FD /* LCBeeSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DCF1FF27D3B00A4A7FD /* CustomBadge */,
 				7B326DAA1FF2718800A4A7FD /* BaseViewController.h */,
 				7B326DAE1FF2718900A4A7FD /* BaseViewController.m */,
 				7B326DAB1FF2718800A4A7FD /* HomeViewController.h */,
@@ -144,6 +186,17 @@
 				7B326D941FF26D1100A4A7FD /* Macro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		7B326DCF1FF27D3B00A4A7FD /* CustomBadge */ = {
+			isa = PBXGroup;
+			children = (
+				7B326DD01FF27D3B00A4A7FD /* CustomBadgeViewController.m */,
+				7B326DD11FF27D3B00A4A7FD /* CustomBadgeViewController.h */,
+				7B326DD31FF27D5400A4A7FD /* CustomBadgeView.h */,
+				7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */,
+			);
+			path = CustomBadge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,13 +270,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B326DB61FF2729B00A4A7FD /* UIView+Extension.m in Sources */,
+				7B326DC51FF2780000A4A7FD /* LCWebview.m in Sources */,
 				7B326DB21FF2718900A4A7FD /* MainTabBarViewController.m in Sources */,
+				7B326DD21FF27D3C00A4A7FD /* CustomBadgeViewController.m in Sources */,
 				7B326DB31FF2718900A4A7FD /* BaseViewController.m in Sources */,
+				7B326DD51FF27D5400A4A7FD /* CustomBadgeView.m in Sources */,
+				7B326DCB1FF2784200A4A7FD /* LCRegularTool.m in Sources */,
 				7B326D6C1FF261A100A4A7FD /* ViewController.m in Sources */,
 				7B326D771FF261A100A4A7FD /* main.m in Sources */,
+				7B326DB91FF273A000A4A7FD /* NSString+Extension.m in Sources */,
 				7B326DAF1FF2718900A4A7FD /* MainNavigationController.m in Sources */,
+				7B326DBF1FF274D800A4A7FD /* UIColor+Extension.m in Sources */,
 				7B326DB01FF2718900A4A7FD /* HomeViewController.m in Sources */,
+				7B326DC81FF2780F00A4A7FD /* LCButton.m in Sources */,
 				7B326D691FF261A100A4A7FD /* AppDelegate.m in Sources */,
+				7B326DC21FF2765E00A4A7FD /* UIButton+Extension.m in Sources */,
 				7B326DB11FF2718900A4A7FD /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

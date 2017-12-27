@@ -1,29 +1,25 @@
 //
-//  BaseViewController.m
+//  CustomBadgeViewController.m
 //  LCBeeSDK
 //
 //  Created by yuchanglin on 2017/12/26.
 //  Copyright © 2017年 yuchanglin. All rights reserved.
 //
 
-#import "BaseViewController.h"
-#import "UIColor+Extension.h"
-@interface BaseViewController ()
+#import "CustomBadgeViewController.h"
+#import "CustomBadgeView.h"
+@interface CustomBadgeViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation CustomBadgeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#f0f0f0"];
-
-    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 7.0) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.navigationController.navigationBar.translucent = NO;
-    }
-     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    CustomBadgeView*view = [[CustomBadgeView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {
