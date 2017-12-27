@@ -27,6 +27,9 @@
 		7B326DCB1FF2784200A4A7FD /* LCRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DC91FF2784100A4A7FD /* LCRegularTool.m */; };
 		7B326DD21FF27D3C00A4A7FD /* CustomBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DD01FF27D3B00A4A7FD /* CustomBadgeViewController.m */; };
 		7B326DD51FF27D5400A4A7FD /* CustomBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */; };
+		7B326DD81FF3933A00A4A7FD /* UIView+DCAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DD71FF3933A00A4A7FD /* UIView+DCAnimationKit.m */; };
+		7B326DDB1FF393DA00A4A7FD /* OrderDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DDA1FF393DA00A4A7FD /* OrderDBManager.m */; };
+		7B326DE81FF3962800A4A7FD /* LCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326DE71FF3962800A4A7FD /* LCWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,12 @@
 		7B326DD11FF27D3B00A4A7FD /* CustomBadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadgeViewController.h; sourceTree = "<group>"; };
 		7B326DD31FF27D5400A4A7FD /* CustomBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBadgeView.h; sourceTree = "<group>"; };
 		7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeView.m; sourceTree = "<group>"; };
+		7B326DD61FF3933900A4A7FD /* UIView+DCAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAnimationKit.h"; sourceTree = "<group>"; };
+		7B326DD71FF3933A00A4A7FD /* UIView+DCAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAnimationKit.m"; sourceTree = "<group>"; };
+		7B326DD91FF393D900A4A7FD /* OrderDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDBManager.h; sourceTree = "<group>"; };
+		7B326DDA1FF393DA00A4A7FD /* OrderDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDBManager.m; sourceTree = "<group>"; };
+		7B326DE61FF3962800A4A7FD /* LCWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCWebViewController.h; sourceTree = "<group>"; };
+		7B326DE71FF3962800A4A7FD /* LCWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,8 @@
 		7B326D7D1FF265ED00A4A7FD /* ToolPackage */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DD91FF393D900A4A7FD /* OrderDBManager.h */,
+				7B326DDA1FF393DA00A4A7FD /* OrderDBManager.m */,
 				7B326DCA1FF2784100A4A7FD /* LCRegularTool.h */,
 				7B326DC91FF2784100A4A7FD /* LCRegularTool.m */,
 				7B326D911FF26D1100A4A7FD /* Macro */,
@@ -139,6 +150,8 @@
 		7B326D7F1FF265ED00A4A7FD /* CategoryPackage */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DD61FF3933900A4A7FD /* UIView+DCAnimationKit.h */,
+				7B326DD71FF3933A00A4A7FD /* UIView+DCAnimationKit.m */,
 				7B326DB41FF2729B00A4A7FD /* UIView+Extension.h */,
 				7B326DB51FF2729B00A4A7FD /* UIView+Extension.m */,
 				7B326DB71FF273A000A4A7FD /* NSString+Extension.h */,
@@ -165,6 +178,7 @@
 		7B326D811FF2662100A4A7FD /* LCBeeSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7B326DE51FF3961000A4A7FD /* webview */,
 				7B326DCF1FF27D3B00A4A7FD /* CustomBadge */,
 				7B326DAA1FF2718800A4A7FD /* BaseViewController.h */,
 				7B326DAE1FF2718900A4A7FD /* BaseViewController.m */,
@@ -197,6 +211,15 @@
 				7B326DD41FF27D5400A4A7FD /* CustomBadgeView.m */,
 			);
 			path = CustomBadge;
+			sourceTree = "<group>";
+		};
+		7B326DE51FF3961000A4A7FD /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				7B326DE61FF3962800A4A7FD /* LCWebViewController.h */,
+				7B326DE71FF3962800A4A7FD /* LCWebViewController.m */,
+			);
+			path = webview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,18 +296,21 @@
 				7B326DB61FF2729B00A4A7FD /* UIView+Extension.m in Sources */,
 				7B326DC51FF2780000A4A7FD /* LCWebview.m in Sources */,
 				7B326DB21FF2718900A4A7FD /* MainTabBarViewController.m in Sources */,
+				7B326DE81FF3962800A4A7FD /* LCWebViewController.m in Sources */,
 				7B326DD21FF27D3C00A4A7FD /* CustomBadgeViewController.m in Sources */,
 				7B326DB31FF2718900A4A7FD /* BaseViewController.m in Sources */,
 				7B326DD51FF27D5400A4A7FD /* CustomBadgeView.m in Sources */,
 				7B326DCB1FF2784200A4A7FD /* LCRegularTool.m in Sources */,
 				7B326D6C1FF261A100A4A7FD /* ViewController.m in Sources */,
 				7B326D771FF261A100A4A7FD /* main.m in Sources */,
+				7B326DDB1FF393DA00A4A7FD /* OrderDBManager.m in Sources */,
 				7B326DB91FF273A000A4A7FD /* NSString+Extension.m in Sources */,
 				7B326DAF1FF2718900A4A7FD /* MainNavigationController.m in Sources */,
 				7B326DBF1FF274D800A4A7FD /* UIColor+Extension.m in Sources */,
 				7B326DB01FF2718900A4A7FD /* HomeViewController.m in Sources */,
 				7B326DC81FF2780F00A4A7FD /* LCButton.m in Sources */,
 				7B326D691FF261A100A4A7FD /* AppDelegate.m in Sources */,
+				7B326DD81FF3933A00A4A7FD /* UIView+DCAnimationKit.m in Sources */,
 				7B326DC21FF2765E00A4A7FD /* UIButton+Extension.m in Sources */,
 				7B326DB11FF2718900A4A7FD /* SettingViewController.m in Sources */,
 			);

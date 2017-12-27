@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "CustomBadgeViewController.h"
+#import "LCWebViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
@@ -32,7 +33,7 @@
 - (NSMutableArray*)dataArray
 {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithArray:@[@"自定义圆角"]];
+        _dataArray = [NSMutableArray arrayWithArray:@[@"自定义圆角",@"自适应匹配webview"]];
     }
     return _dataArray;
 }
@@ -69,9 +70,14 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomBadgeViewController *vc = [[CustomBadgeViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    NSLog(@"%@", [NSString stringWithFormat:@"选中第%ld个单元格",(long)indexPath.row]);
+    if (indexPath.row== 0) {
+        CustomBadgeViewController *vc = [[CustomBadgeViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1){
+        LCWebViewController *vc = [[LCWebViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+     NSLog(@"%@", [NSString stringWithFormat:@"选中第%ld个单元格",(long)indexPath.row]);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
