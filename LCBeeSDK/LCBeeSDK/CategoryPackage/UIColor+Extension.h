@@ -9,6 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Extension)
-+ (UIColor *) colorWithHexString: (NSString *) hexString;
+
+/**
+ *  从HEX字符串得到一个UIColor对象
+ */
++ (UIColor *)colorWithHexString: (NSString *) hexString;
 + (UIColor *)colorWithHex:(u_int32_t)hex;
+/**
+ *  创建一个随机UIColor对象
+ */
++ (UIColor *)randomColor;
+
+/**
+ *  从已知UIColor对象和Alpha对象得到一个UIColor对象
+ */
++ (UIColor *)colorWithColor:(UIColor *)color
+                      alpha:(float)alpha;
+
+//UIColor 转UIImage
++ (UIImage*) imageWithColor: (UIColor*) color;
 @end

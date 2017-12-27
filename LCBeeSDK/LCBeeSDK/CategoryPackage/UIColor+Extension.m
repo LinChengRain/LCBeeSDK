@@ -23,6 +23,7 @@
 }
 
 + (UIColor *) colorWithHexString: (NSString *) hexString {
+    // 获取目标字符串，替换字符并转换成大写字符串
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
     CGFloat alpha, red, blue, green;
     switch ([colorString length]) {
@@ -63,5 +64,50 @@
     unsigned hexComponent;
     [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
     return hexComponent / 255.0;
+}
+
+
+/* 创建一个随机UIColor对象 */
++ (UIColor *)randomColor
+{
+    int r = arc4random() % 255;
+    int g = arc4random() % 255;
+    int b = arc4random() % 255;
+    
+    return [UIColor colorWithRed:r/255.0
+                           green:g/255.0
+                            blue:b/255.0
+                           alpha:1.0];
+}
+
+// UIColor 转UIImage
++ (UIImage*) imageWithColor: (UIColor*) color
+{
+    CGRect rect=CGRectMake(0,0, 1, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
+/*  从已知UIColor对象和Alpha对象得到一个UIColor对象 */
++ (UIColor *)colorWithColor:(UIColor *)color
+                      alpha:(float)alpha
+{
+    if([color isEqual:[UIColor whiteColor]])
+        return [UIColor colorWithWhite:1.000
+                                 alpha:alpha];
+    if([color isEqual:[UIColor blackColor]])
+        return [UIColor colorWithWhite:0.000
+                                 alpha:alpha];
+    
+    // 使用CGColorGetComponents方法，获取'color'关联的颜色组件
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    return [UIColor colorWithRed:components[0]
+                           green:components[1]
+                            blue:components[2]
+                           alpha:alpha];
 }
 @end

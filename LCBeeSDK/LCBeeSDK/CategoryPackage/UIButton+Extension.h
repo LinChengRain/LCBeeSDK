@@ -42,3 +42,13 @@ typedef NS_ENUM(NSUInteger, MYButtonEdgeInsetsStyle) {
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 @end
 
+@interface UIButton (EnlargeTouchArea)
+
+/**
+ *  扩大 UIButton 的點擊範圍
+ *  控制上下左右的延長範圍
+ */
+- (void)setEnlargeEdgeWithTop:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom left:(CGFloat)left;
+
+@end
+
