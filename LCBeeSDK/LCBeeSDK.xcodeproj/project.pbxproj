@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259E17BC20CE60C500D48DDF /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17BB20CE60C400D48DDF /* UILabel+Extension.m */; };
+		259E17BF20CE613600D48DDF /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17BD20CE613500D48DDF /* NSString+Extension.m */; };
+		259E17C420CE618900D48DDF /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 259E17C220CE618900D48DDF /* images.bundle */; };
+		259E17C520CE618900D48DDF /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17C320CE618900D48DDF /* MBProgressHUD+Extension.m */; };
 		7B326D691FF261A100A4A7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326D681FF261A100A4A7FD /* AppDelegate.m */; };
 		7B326D6C1FF261A100A4A7FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326D6B1FF261A100A4A7FD /* ViewController.m */; };
 		7B326D6F1FF261A100A4A7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B326D6D1FF261A100A4A7FD /* Main.storyboard */; };
@@ -39,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259E17BA20CE60C400D48DDF /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		259E17BB20CE60C400D48DDF /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		259E17BD20CE613500D48DDF /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "../../../../../oschina/ServiceCustomTools/ServiceCustomTools/ServiceCustomTools/Custom/Category/Foundation/NSString+Extension.m"; sourceTree = "<group>"; };
+		259E17BE20CE613500D48DDF /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "../../../../../oschina/ServiceCustomTools/ServiceCustomTools/ServiceCustomTools/Custom/Category/Foundation/NSString+Extension.h"; sourceTree = "<group>"; };
+		259E17C120CE618900D48DDF /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		259E17C220CE618900D48DDF /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		259E17C320CE618900D48DDF /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		7B326D641FF261A100A4A7FD /* LCBeeSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCBeeSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B326D671FF261A100A4A7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B326D681FF261A100A4A7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +120,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259E17C020CE618900D48DDF /* MBProgressHUD+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				259E17C120CE618900D48DDF /* MBProgressHUD+Extension.h */,
+				259E17C220CE618900D48DDF /* images.bundle */,
+				259E17C320CE618900D48DDF /* MBProgressHUD+Extension.m */,
+			);
+			path = "MBProgressHUD+Extension";
+			sourceTree = "<group>";
+		};
 		7B326D5B1FF261A000A4A7FD = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +189,11 @@
 		7B326D7F1FF265ED00A4A7FD /* CategoryPackage */ = {
 			isa = PBXGroup;
 			children = (
+				259E17C020CE618900D48DDF /* MBProgressHUD+Extension */,
+				259E17BE20CE613500D48DDF /* NSString+Extension.h */,
+				259E17BD20CE613500D48DDF /* NSString+Extension.m */,
+				259E17BA20CE60C400D48DDF /* UILabel+Extension.h */,
+				259E17BB20CE60C400D48DDF /* UILabel+Extension.m */,
 				7B326DD61FF3933900A4A7FD /* UIView+DCAnimationKit.h */,
 				7B326DD71FF3933A00A4A7FD /* UIView+DCAnimationKit.m */,
 				7B326DB41FF2729B00A4A7FD /* UIView+Extension.h */,
@@ -321,6 +347,7 @@
 				7B326D741FF261A100A4A7FD /* LaunchScreen.storyboard in Resources */,
 				7B326D711FF261A100A4A7FD /* Assets.xcassets in Resources */,
 				7B326D6F1FF261A100A4A7FD /* Main.storyboard in Resources */,
+				259E17C420CE618900D48DDF /* images.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259E17BC20CE60C500D48DDF /* UILabel+Extension.m in Sources */,
 				7B326DB61FF2729B00A4A7FD /* UIView+Extension.m in Sources */,
 				7B326DF11FF39DDC00A4A7FD /* NSData+Extension.m in Sources */,
 				7B326DC51FF2780000A4A7FD /* LCWebview.m in Sources */,
@@ -356,7 +384,9 @@
 				7B326D691FF261A100A4A7FD /* AppDelegate.m in Sources */,
 				7B326DD81FF3933A00A4A7FD /* UIView+DCAnimationKit.m in Sources */,
 				7B326DC21FF2765E00A4A7FD /* UIButton+Extension.m in Sources */,
+				259E17C520CE618900D48DDF /* MBProgressHUD+Extension.m in Sources */,
 				7B326DB11FF2718900A4A7FD /* SettingViewController.m in Sources */,
+				259E17BF20CE613600D48DDF /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
