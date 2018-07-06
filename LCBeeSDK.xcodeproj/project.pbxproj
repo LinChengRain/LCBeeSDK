@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E472E8B66F5CDBE5DDE978A /* libPods-LCBeeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F46F8FAC00CDC8B045427BF8 /* libPods-LCBeeSDK.a */; };
 		259E17BC20CE60C500D48DDF /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17BB20CE60C400D48DDF /* UILabel+Extension.m */; };
-		259E17BF20CE613600D48DDF /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17BD20CE613500D48DDF /* NSString+Extension.m */; };
 		259E17C420CE618900D48DDF /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 259E17C220CE618900D48DDF /* images.bundle */; };
 		259E17C520CE618900D48DDF /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E17C320CE618900D48DDF /* MBProgressHUD+Extension.m */; };
 		7B326D691FF261A100A4A7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B326D681FF261A100A4A7FD /* AppDelegate.m */; };
@@ -85,13 +85,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A44AD8AFC889FC7CB0DF1AC /* Pods-LCBeeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCBeeSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCBeeSDK/Pods-LCBeeSDK.release.xcconfig"; sourceTree = "<group>"; };
 		259E17BA20CE60C400D48DDF /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
 		259E17BB20CE60C400D48DDF /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
-		259E17BD20CE613500D48DDF /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "../../../../../oschina/ServiceCustomTools/ServiceCustomTools/ServiceCustomTools/Custom/Category/Foundation/NSString+Extension.m"; sourceTree = "<group>"; };
-		259E17BE20CE613500D48DDF /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "../../../../../oschina/ServiceCustomTools/ServiceCustomTools/ServiceCustomTools/Custom/Category/Foundation/NSString+Extension.h"; sourceTree = "<group>"; };
 		259E17C120CE618900D48DDF /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
 		259E17C220CE618900D48DDF /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 		259E17C320CE618900D48DDF /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		4542C51098C4D6D5F8C93B88 /* Pods-LCBeeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCBeeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCBeeSDK/Pods-LCBeeSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		7B326D641FF261A100A4A7FD /* LCBeeSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCBeeSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B326D671FF261A100A4A7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B326D681FF261A100A4A7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -233,6 +233,7 @@
 		7B3F5B9620D01466005BF62C /* NSObject+JKAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKAssociatedObject.h"; sourceTree = "<group>"; };
 		7B3F5B9720D01467005BF62C /* UIButton+JKSubmitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKSubmitting.h"; sourceTree = "<group>"; };
 		7B3F5B9820D01467005BF62C /* NSDate+JKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKUtilities.m"; sourceTree = "<group>"; };
+		F46F8FAC00CDC8B045427BF8 /* libPods-LCBeeSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LCBeeSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E472E8B66F5CDBE5DDE978A /* libPods-LCBeeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +258,21 @@
 			path = "MBProgressHUD+Extension";
 			sourceTree = "<group>";
 		};
+		6593E3FBC7C5B84255F4109E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46F8FAC00CDC8B045427BF8 /* libPods-LCBeeSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B326D5B1FF261A000A4A7FD = {
 			isa = PBXGroup;
 			children = (
 				7B326D661FF261A100A4A7FD /* LCBeeSDK */,
 				7B326D651FF261A100A4A7FD /* Products */,
+				8E6CE7EE89B02384681EA6F5 /* Pods */,
+				6593E3FBC7C5B84255F4109E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,7 +290,6 @@
 				7B3F5B4020D0145B005BF62C /* New Group */,
 				7B326D811FF2662100A4A7FD /* LCBeeSDKDemo */,
 				7B326D7F1FF265ED00A4A7FD /* CategoryPackage */,
-				7B326D7E1FF265ED00A4A7FD /* NetPackage */,
 				7B326D7D1FF265ED00A4A7FD /* ToolPackage */,
 				7B326D801FF265ED00A4A7FD /* UIPackage */,
 				7B326D671FF261A100A4A7FD /* AppDelegate.h */,
@@ -306,19 +317,10 @@
 			path = ToolPackage;
 			sourceTree = "<group>";
 		};
-		7B326D7E1FF265ED00A4A7FD /* NetPackage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetPackage;
-			sourceTree = "<group>";
-		};
 		7B326D7F1FF265ED00A4A7FD /* CategoryPackage */ = {
 			isa = PBXGroup;
 			children = (
 				259E17C020CE618900D48DDF /* MBProgressHUD+Extension */,
-				259E17BE20CE613500D48DDF /* NSString+Extension.h */,
-				259E17BD20CE613500D48DDF /* NSString+Extension.m */,
 				259E17BA20CE60C400D48DDF /* UILabel+Extension.h */,
 				259E17BB20CE60C400D48DDF /* UILabel+Extension.m */,
 				7B326DD61FF3933900A4A7FD /* UIView+DCAnimationKit.h */,
@@ -536,6 +538,15 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		8E6CE7EE89B02384681EA6F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4542C51098C4D6D5F8C93B88 /* Pods-LCBeeSDK.debug.xcconfig */,
+				0A44AD8AFC889FC7CB0DF1AC /* Pods-LCBeeSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -543,6 +554,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B326D7A1FF261A100A4A7FD /* Build configuration list for PBXNativeTarget "LCBeeSDK" */;
 			buildPhases = (
+				6C466F14AF0B9C3F02068D1A /* [CP] Check Pods Manifest.lock */,
 				7B326D601FF261A100A4A7FD /* Sources */,
 				7B326D611FF261A100A4A7FD /* Frameworks */,
 				7B326D621FF261A100A4A7FD /* Resources */,
@@ -562,7 +574,7 @@
 		7B326D5C1FF261A000A4A7FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = yuchanglin;
 				TargetAttributes = {
 					7B326D631FF261A100A4A7FD = {
@@ -572,7 +584,7 @@
 				};
 			};
 			buildConfigurationList = 7B326D5F1FF261A000A4A7FD /* Build configuration list for PBXProject "LCBeeSDK" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -602,6 +614,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C466F14AF0B9C3F02068D1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCBeeSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B326D601FF261A100A4A7FD /* Sources */ = {
@@ -677,7 +710,6 @@
 				7B3F5B9920D01467005BF62C /* UIImage+JKSuperCompress.m in Sources */,
 				7B3F5BAA20D01467005BF62C /* NSString+JKRemoveEmoji.m in Sources */,
 				7B3F5B9A20D01467005BF62C /* NSDate+JKExtension.m in Sources */,
-				259E17BF20CE613600D48DDF /* NSString+Extension.m in Sources */,
 				7B3F5BA920D01467005BF62C /* NSString+JKContains.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +750,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -725,6 +758,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -773,6 +807,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -780,6 +815,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -810,13 +846,17 @@
 		};
 		7B326D7B1FF261A100A4A7FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4542C51098C4D6D5F8C93B88 /* Pods-LCBeeSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZEUVTKQ68;
 				INFOPLIST_FILE = LCBeeSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bee.LCBeeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -825,13 +865,17 @@
 		};
 		7B326D7C1FF261A100A4A7FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A44AD8AFC889FC7CB0DF1AC /* Pods-LCBeeSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZEUVTKQ68;
 				INFOPLIST_FILE = LCBeeSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bee.LCBeeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
