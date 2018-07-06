@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
     
+    [self loadData];
     [self initSubviews];
 }
 
@@ -29,11 +30,19 @@
     [self.view addSubview:self.tableView];
 
 }
+- (void)loadData{
+    [self.dataArray addObjectsFromArray:@[@{@"title":@"自定义控件线的位置",@"class":@"CustomBadgeViewController"},
+                                          @{@"title":@"自适应匹配webview",@"class":@"LCWebViewController"},
+                                          @{@"title":@"加载页控件",@"class":@"ListTableViewController"},
+                                          @{@"title":@"动画效果",@"class":@"AnimationTableViewController"},
+                                          @{@"title":@"静默发送邮件",@"class":@"SendEmailTableViewController"},
+                                          @{@"title":@"UI控件扩展",@"class":@"CommonUIViewController"}]];
+}
 #pragma mark - Lazy Methods
 - (NSMutableArray*)dataArray
 {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithArray:@[@"自定义圆角",@"自适应匹配webview"]];
+        _dataArray = [NSMutableArray array];
     }
     return _dataArray;
 }
@@ -65,18 +74,19 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    NSDictionary *dictData = [self.dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dictData valueForKey:@"title"];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row== 0) {
-        CustomBadgeViewController *vc = [[CustomBadgeViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 1){
-        LCWebViewController *vc = [[LCWebViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+    NSDictionary *dictData = [self.dataArray objectAtIndex:indexPath.row];
+    NSString *cls = [dictData valueForKey:@"class"];
+    
+    UIViewController *vc = [[NSClassFromString(cls) alloc]init];
+
+    [self.navigationController pushViewController:vc animated:YES];
+
      NSLog(@"%@", [NSString stringWithFormat:@"选中第%ld个单元格",(long)indexPath.row]);
 }
 - (void)didReceiveMemoryWarning {

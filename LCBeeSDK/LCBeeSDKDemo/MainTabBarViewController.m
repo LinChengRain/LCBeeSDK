@@ -42,7 +42,7 @@
     
     //设置选中时文字样式
     NSMutableDictionary *selectedAtts=[NSMutableDictionary dictionary];
-    selectedAtts[NSForegroundColorAttributeName]=RGB_COLOR(71, 167, 230,1);
+    selectedAtts[NSForegroundColorAttributeName]=RGB_COLOR(71, 167, 230);
     
     [controller.tabBarItem setTitleTextAttributes:selectedAtts forState:UIControlStateSelected];
     
