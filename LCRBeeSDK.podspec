@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LCRBeeSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.01"
   s.summary      = "LCRBeeSDK is A common tool class framework of myself"
 
   # This description is used to generate tags and improve search results.
