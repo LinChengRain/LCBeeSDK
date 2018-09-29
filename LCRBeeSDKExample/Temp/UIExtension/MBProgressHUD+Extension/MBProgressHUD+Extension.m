@@ -2,8 +2,8 @@
 //  MBProgressHUD+Extension.m
 //  ServiceProject
 //
-//  Created by gz on 2018/6/6.
-//  Copyright © 2018年 yu changlin. All rights reserved.
+//  Created by yuchanglin on 2018/6/6.
+//  Copyright © 2018年 yuchanglin. All rights reserved.
 //
 
 #import "MBProgressHUD+Extension.h"
