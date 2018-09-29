@@ -140,7 +140,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CustomViews' do |cs|
-      cs.source_files = 'LCRBeeSDK/CustomViews/NCKSub/*.{h,m}'
+      cs.source_files = 'LCRBeeSDK/CustomViews/*.{h,m}'
   end
 end
 
