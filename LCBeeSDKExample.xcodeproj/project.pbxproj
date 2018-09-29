@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25284EAD215F2759002D59F5 /* AppDelegate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 25284EA4215F2759002D59F5 /* AppDelegate+Extension.m */; };
 		25284EAE215F2759002D59F5 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25284EA8215F2759002D59F5 /* LCButton.m */; };
 		25284EAF215F2759002D59F5 /* LCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25284EA9215F2759002D59F5 /* LCTextView.m */; };
 		25284EB0215F2759002D59F5 /* LCWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = 25284EAB215F2759002D59F5 /* LCWebview.m */; };
+		25284EBE215F2BAF002D59F5 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 25284EBD215F2BAF002D59F5 /* UIButton+Extension.m */; };
 		2574AC0A215F1DB5004EB71E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2574AC09215F1DB5004EB71E /* AppDelegate.m */; };
 		2574AC0D215F1DB5004EB71E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2574AC0C215F1DB5004EB71E /* ViewController.m */; };
 		2574AC10215F1DB5004EB71E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2574AC0E215F1DB5004EB71E /* Main.storyboard */; };
@@ -40,14 +40,14 @@
 
 /* Begin PBXFileReference section */
 		2521AA1CFC4EAC216C352B5A /* Pods-LCBeeSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCBeeSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCBeeSDKExample/Pods-LCBeeSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
-		25284EA4215F2759002D59F5 /* AppDelegate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extension.m"; sourceTree = "<group>"; };
-		25284EA5215F2759002D59F5 /* AppDelegate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extension.h"; sourceTree = "<group>"; };
 		25284EA7215F2759002D59F5 /* LCWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWebview.h; sourceTree = "<group>"; };
 		25284EA8215F2759002D59F5 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
 		25284EA9215F2759002D59F5 /* LCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextView.m; sourceTree = "<group>"; };
 		25284EAA215F2759002D59F5 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
 		25284EAB215F2759002D59F5 /* LCWebview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWebview.m; sourceTree = "<group>"; };
 		25284EAC215F2759002D59F5 /* LCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextView.h; sourceTree = "<group>"; };
+		25284EBC215F2BAF002D59F5 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		25284EBD215F2BAF002D59F5 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		2574AC05215F1DB5004EB71E /* LCBeeSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCBeeSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2574AC08215F1DB5004EB71E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2574AC09215F1DB5004EB71E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,19 +113,10 @@
 		25284EA2215F2759002D59F5 /* LCRBeeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				25284EA3215F2759002D59F5 /* Extensions */,
+				25284EBB215F2BAF002D59F5 /* Extensions */,
 				25284EA6215F2759002D59F5 /* CustomViews */,
 			);
 			path = LCRBeeSDK;
-			sourceTree = "<group>";
-		};
-		25284EA3215F2759002D59F5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				25284EA4215F2759002D59F5 /* AppDelegate+Extension.m */,
-				25284EA5215F2759002D59F5 /* AppDelegate+Extension.h */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		25284EA6215F2759002D59F5 /* CustomViews */ = {
@@ -139,6 +130,15 @@
 				25284EAC215F2759002D59F5 /* LCTextView.h */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		25284EBB215F2BAF002D59F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25284EBC215F2BAF002D59F5 /* UIButton+Extension.h */,
+				25284EBD215F2BAF002D59F5 /* UIButton+Extension.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2574ABFC215F1DB5004EB71E = {
@@ -369,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25284EBE215F2BAF002D59F5 /* UIButton+Extension.m in Sources */,
 				2574AC0D215F1DB5004EB71E /* ViewController.m in Sources */,
 				2574AC18215F1DB6004EB71E /* main.m in Sources */,
 				259F5CF7215F20BE00717366 /* DetailAnimationViewController.m in Sources */,
@@ -384,7 +385,6 @@
 				259F5CF8215F20BE00717366 /* CustomBadgeViewController.m in Sources */,
 				259F5CFC215F20BE00717366 /* AnimationTableViewController.m in Sources */,
 				25284EAF215F2759002D59F5 /* LCTextView.m in Sources */,
-				25284EAD215F2759002D59F5 /* AppDelegate+Extension.m in Sources */,
 				259F5CED215F20BE00717366 /* SettingViewController.m in Sources */,
 				259F5CF1215F20BE00717366 /* MainTabBarViewController.m in Sources */,
 				259F5CF6215F20BE00717366 /* EmailDetailViewController.m in Sources */,
