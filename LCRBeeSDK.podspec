@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LCRBeeSDK"
-  s.version      = "0.0.01"
+  s.version      = "0.0.02"
   s.summary      = "LCRBeeSDK is A common tool class framework of myself"
 
   # This description is used to generate tags and improve search results.
@@ -135,6 +135,12 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
+  s.subspec 'Extensions' do |cs|
+      cs.source_files = 'LCRBeeSDK/Extensions/*.{h,m}'
+  end
 
+  s.subspec 'CustomViews' do |cs|
+      cs.source_files = 'LCRBeeSDK/CustomViews/NCKSub/*.{h,m}'
 
 end
+
